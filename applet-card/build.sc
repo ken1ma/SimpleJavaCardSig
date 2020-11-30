@@ -59,7 +59,7 @@ trait CommonJavaModule extends JavaModule with InheritUnmanagedClasspath {
 }
 
 trait CommonScalaModule extends ScalaModule with InheritUnmanagedClasspath {
-  def scalaVersion = "2.13.3"
+  def scalaVersion = "2.13.4"
   def scalacOptions = Seq(
   // the default settings from https://scastie.scala-lang.org
     "-encoding", "UTF-8",
