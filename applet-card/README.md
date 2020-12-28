@@ -2,10 +2,10 @@
 
 1. Latest macOS / Linux / Windows
 1. [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/) 11.0.9 LTS
-1. [mill](http://www.lihaoyi.com/mill/) 0.9.3
+1. [mill](http://www.lihaoyi.com/mill/) 0.9.4
 	1. For Linux/macOS, the bootstrap script has been commited as below
 
-			curl -L https://github.com/lihaoyi/mill/releases/download/0.9.3/0.9.3 > mill && chmod +x mill
+			curl -L https://github.com/lihaoyi/mill/releases/download/0.9.4/0.9.4 > mill && chmod +x mill
 
 	2. For Windows, the wrapper script has been commited as below
 
