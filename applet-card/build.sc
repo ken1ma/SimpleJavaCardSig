@@ -2,7 +2,7 @@ import mill._, scalalib._, scalajslib._
 import $ivy.`com.github.pureconfig::pureconfig:0.14.0`, pureconfig._, pureconfig.generic.auto._, pureconfig.generic.ProductHint
 
 object JavaCard {
-  val jcHome = os.pwd / "tool" / "jc31b71_kit" // targetVersion can be 3.0.4, 3.0.5, or 3.1.0
+  val jcHome = os.pwd / "tool" / "jc31b108_kit" // targetVersion can be 3.0.4, 3.0.5, or 3.1.0
   val targetVersion = "3.0.4"
 
   case class AppletConf(

@@ -1,5 +1,5 @@
-1. `jc31b71_kit`: [Java Card Development Kit Tools](https://www.oracle.com/java/technologies/javacard-sdk-downloads.html)
-    1. Downloaded and renamed `java_card_tools-win-bin-b_71-02_sep_2020.zip`
+1. `jc31b108_kit`: [Java Card Development Kit Tools](https://www.oracle.com/java/technologies/javacard-sdk-downloads.html)
+    1. Downloaded and renamed `java_card_tools-win-bin-b_108-06_jan_2021.zip`
     1. Named like https://github.com/martinpaljak/oracle_javacard_sdks
 
 1. `gp.jar`: [GlobalPlatformPro](https://github.com/martinpaljak/GlobalPlatformPro) 20.01.23
