@@ -1,7 +1,7 @@
 ## Development environment
 
 1. Latest macOS / Linux / Windows
-1. [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/) 11.0.9 LTS
+1. [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/) 11.0.10 LTS
 1. [mill](http://www.lihaoyi.com/mill/) 0.9.4
 	1. For Linux/macOS, the bootstrap script has been commited as below
 

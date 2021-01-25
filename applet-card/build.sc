@@ -163,7 +163,7 @@ object common extends Module {
       def moduleDeps = Seq(client)
       def ivyDeps = Agg(
         ivy"com.github.pureconfig::pureconfig:0.14.0",
-        ivy"com.lihaoyi::utest:0.7.5",
+        ivy"com.lihaoyi::utest:0.7.6",
       )
     }
   }
