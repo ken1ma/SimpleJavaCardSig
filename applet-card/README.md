@@ -22,16 +22,22 @@
 1. Build and test with jcardsim
 
 		./mill SimpleJavaCardSig.jcardsim.test
+		./mill samples.JavaCardSystemInfo.jcardsim.test
+		./mill samples.ByteArrayBuilder.jcardsim.test
 
 1. Build, generate the Java Card CAP file, then install it.
 
 		./mill SimpleJavaCardSig.applet.install
+		./mill samples.JavaCardSystemInfo.applet.install
+		./mill samples.ByteArrayBuilder.applet.install
 
     1. A Java Card 3.0 compatible card and a card reader is needed
 
 1. Test the installed applet with PC/SC
 
 		./mill SimpleJavaCardSig.pcsc.test
+		./mill samples.JavaCardSystemInfo.pcsc.test
+		./mill samples.ByteArrayBuilder.pcsc.test
 
 ## Helpful commands
 

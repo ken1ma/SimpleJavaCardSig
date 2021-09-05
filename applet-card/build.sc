@@ -13,9 +13,9 @@ object JavaCard {
     packageVersion: String,
   )
 
-  def convert(destDir: os.Path, classesDir: os.Path, conf: AppletConf, log: mill.api.Logger): Unit = {
+  def converter(destDir: os.Path, classesDir: os.Path, conf: AppletConf, log: mill.api.Logger): Unit = {
     def decorateHex(compact: String) = compact.grouped(2).map(hex => s"0x$hex").mkString(":") // 0102 to 0x01:0x02
-    val args = Array(
+    val args = Seq(
       "-d", destDir.toString,
       "-target", targetVersion,
       "-classdir", classesDir.toString,
@@ -41,6 +41,8 @@ object JavaCard {
     SystemExitInterceptor.run { mainMethod.invoke(null, args) }
 */
   }
+
+  // TODO: verifier
 }
 
 trait InheritUnmanagedClasspath extends JavaModule {
@@ -92,7 +94,7 @@ trait AppletRootModule extends CommonJavaModule { rootModule =>
       val destDir = T.dest / "javacard"
       conf().toSeq.map { entry =>
         val (appletName, appletConf) = entry
-        JavaCard.convert(destDir, compile().classes.path, appletConf, T.ctx.log)
+        JavaCard.converter(destDir, compile().classes.path, appletConf, T.ctx.log)
         val capDir = os.RelPath(appletConf.packageName.replace('.', '/'))
         PathRef(destDir / capDir / "javacard" / (capDir.last + ".cap"))
       }
